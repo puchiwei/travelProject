@@ -59,7 +59,7 @@ body{
     background:linear-gradient(to right bottom,
         rgba(172, 91, 247, 0.7),
         rgba(101, 2, 189,0.7)),
-        url(../img/picture1.jpg);
+        url(../picture1.jpg);
     background-size: cover;
     background-position: top;
     height:80vh; 
@@ -179,7 +179,7 @@ h1{
     background:linear-gradient(to right bottom,
     rgba(222, 219, 224, 0.8),
     rgba(166, 149, 180, 0.8)),
-    url(../img/main_background.jpg);
+    url(../main_background.jpg);
     font-family:微軟正黑體; 
     color:rgb(82, 80, 80);
     clip-path: polygon(0 0,100% 10vh,100% 100%,0 100%);
