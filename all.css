@@ -59,7 +59,7 @@ body{
     background:linear-gradient(to right bottom,
         rgba(172, 91, 247, 0.7),
         rgba(101, 2, 189,0.7)),
-        url(../img/picture1.jpg);
+        url(img/picture1.jpg);
     background-size: cover;
     background-position: top;
     height:80vh; 
@@ -165,7 +165,8 @@ h1{
     font-weight:700;
     letter-spacing:25px;
     font-size:40px;
-    color:rgba(101, 2, 189,0.7)
+    color:rgba(101, 2, 189,0.7);
+    transition: all 0.8s;
 }
 .popularity-main:hover{
     transform: translateY(-3px) rotate(5deg) ;
@@ -179,7 +180,7 @@ h1{
     background:linear-gradient(to right bottom,
     rgba(222, 219, 224, 0.8),
     rgba(166, 149, 180, 0.8)),
-    url(../img/main_background.jpg);
+    url(img/main_background.jpg);
     font-family:微軟正黑體; 
     color:rgb(82, 80, 80);
     clip-path: polygon(0 0,100% 10vh,100% 100%,0 100%);
