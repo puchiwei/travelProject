@@ -79,6 +79,8 @@ body{
     position: absolute;
     top:50%;
     left:40%;
+    width:190px;
+    height:40px;
     transform: translateY(80px);
     text-align: center;
 }
@@ -170,7 +172,6 @@ h1{
 }
 .popularity-main:hover{
     transform: translateY(-3px) rotate(5deg) ;
-    box-shadow: 5px 5px 50px rgb(165, 162, 162) ;
 }
 /*---------清單部分---------*/
 .main{
@@ -197,6 +198,7 @@ h1{
     display:inline-block;
     width:400px;
     border:1px solid grey;
+    box-shadow:1.5px 1px 3px 1px rgb(65, 64, 64) ;
     border-radius: 10px;
     margin:5px;
 }
@@ -217,10 +219,27 @@ h1{
     font-size:20px;
     font-family:微軟正黑體;
     font-weight: 800;
-    width:100%;
-    height:30px;
+    width:190px;
+    height:40px;
     padding-left:10px;
     border-radius: 100px;
+}
+.change::after{
+    display:inline-block ;
+    content:"";
+    background-color:#fff;
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius: 100px;
+    top:0;
+    left:0 ;
+    z-index:-1;
+    transition: all 0.4s;
+}
+.change:hover::after{
+    transform:scaleX(1.4) scaleY(1.6);
+    opacity:0;
 }
 
 .btn{
@@ -251,3 +270,4 @@ h1{
 .btn:active{
     transform: translateY(1px);
 }
+
