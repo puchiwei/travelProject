@@ -172,8 +172,14 @@ function loadSuccess(){
         console.log(selectedAry);
     //每頁顯示6筆
         let str = '' ;
-        let finalNum = selectedAry.length % 6 ;
-        for(i=(pageNum-1)*6;i<(pageNum-1)*6+finalNum;i++){
+        function divideHandeler(){
+            if(selectedAry.length % 6 === 0){
+                return 6
+            }else{
+                return selectedAry.length % 6
+            }
+        }
+        for(i=(pageNum-1)*6;i<(pageNum-1)*6+divideHandeler();i++){
             let content =`
                     <div class="list-box">
                             <img src=${selectedAry[i].Picture1}>
@@ -185,7 +191,7 @@ function loadSuccess(){
                                     `
             str += content ;
             console.log(selectedAry[i].Picture1);
-        }//函數有bug
+        }
         list.innerHTML = str ;
     }
 
