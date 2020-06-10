@@ -198,7 +198,7 @@ h1{
     display:inline-block;
     width:400px;
     border:1px solid grey;
-    box-shadow:1.5px 1px 3px 1px rgb(65, 64, 64) ;
+    box-shadow:1.5px 1px 5px 1px rgb(88, 88, 88) ;
     border-radius: 10px;
     margin:5px;
 }
